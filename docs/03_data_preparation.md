@@ -29,7 +29,7 @@ dataset/
 
 ## Annotation Format
 
-YOLO Segmentation
+YOLO Detection
 
 ## Data Quality
 

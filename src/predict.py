@@ -14,7 +14,7 @@ from visualizer import Visualizer
 
 def main():
 
-    image_path = input("Enter image path: ")
+    image_path = "datasets\\test\\images\\l_light_01_missing_hole_18_1_600.jpg"
 
     image = cv2.imread(image_path)
 
@@ -31,7 +31,7 @@ def main():
         Visualizer(),
     )
 
-    report, output = pipeline.process(image)
+    report, output = pipeline.Process(image)
 
     print(report)
 
