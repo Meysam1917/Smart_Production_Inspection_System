@@ -29,7 +29,12 @@ dataset/
 
 ## Annotation Format
 
-YOLO Detection
+YOLO Object Detection Format
+
+Each annotation file contains one line per object:
+<class_id> <x_center> <y_center> <width> <height>
+
+All coordinates are normalized to the image dimensions.
 
 ## Data Quality
 

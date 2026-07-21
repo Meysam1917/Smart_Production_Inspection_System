@@ -3,13 +3,13 @@
 ## Dataset Overview
 
 Dataset Name:
-PCB Defect Dataset
+Kaggle - PCB Defect Dataset
 
 Domain:
 Industrial Quality Inspection
 
 Task:
-Instance Segmentation
+Object Detection
 
 ## Dataset Structure
 
@@ -40,7 +40,8 @@ The dataset is well balanced.
 
 The difference between the largest and the smallest class is approximately 5%, therefore no class balancing techniques are currently required.
 
-(Insert class distribution figure here)
+<img src="reports\\class_disterbution.png" alt="Inspection Result" width="600">
+
 
 ## Annotation Format
 
@@ -56,9 +57,9 @@ The dataset contains:
 - Validation set
 - Test set
 
-No missing split was observed.
-
-Labels appear correctly formatted.
+The dataset contains predefined training, validation, and test splits.
+Random samples were inspected to verify annotation consistency and image quality.
+No missing annotation files or corrupted images were observed.
 
 ## Strengths
 
