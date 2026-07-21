@@ -1,4 +1,14 @@
-.venv/
 __pycache__/
 *.pyc
-outputs/
+
+.venv/
+
+runs/
+
+reports/output_images/
+
+datasets/
+
+*.pt
+
+.vscode/

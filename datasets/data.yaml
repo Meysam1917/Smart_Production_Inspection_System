@@ -1,13 +1,12 @@
-train: ../train/images
-val: ../valid/images
-test: ../test/images
+path: C:\Users\Meysam\OneDrive\Desktop\Python My self\SmartProduceInspectionSystem\datasets
+train: train/images
+val: val/images
+test: test/images
 
-nc: 2
-names: ['defective', 'healthy']
-
-roboflow:
-  workspace: north-south-university-lmwdv
-  project: healthy-defective-fruits
-  version: 1
-  license: CC BY 4.0
-  url: https://universe.roboflow.com/north-south-university-lmwdv/healthy-defective-fruits/dataset/1
+names:
+  0: mouse_bite
+  1: spur
+  2: missing_hole
+  3: short
+  4: open_circuit
+  5: spurious_copper
