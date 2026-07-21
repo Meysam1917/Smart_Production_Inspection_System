@@ -158,6 +158,13 @@ python src/main.py
 The system generates:
 
 - Annotated PCB image
+<!-- Resize width to 600px -->
+<img src="reports\output_images\rotation_270_light_12_spurious_copper_02_3_600.jpg" alt="Inspection Result" width="600">
+
+<!-- Center the image -->
+<p align="center">
+  <img src="reports\output_images\rotation_270_light_12_spur_09_1_600.jpg" alt="Inspection Result" width="600">
+</p>
 - Inspection report (JSON)
 
 Example:
