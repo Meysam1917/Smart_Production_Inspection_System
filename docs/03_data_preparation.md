@@ -1,65 +1,48 @@
 # Data Preparation
 
-## Dataset
+## Annotation Format
 
-PCB Defect Dataset
+YOLO Detection Format
 
-## Dataset Structure
+Each annotation contains
 
-```
-dataset/
-│
-├── train/
-├── val/
-└── test/
-```
+<class_id> <x_center> <y_center> <width> <height>
 
-## Classes
-
-- mouse_bite
-- spur
-- missing_hole
-- short
-- open_circuit
-- spurious_copper
+---
 
 ## Image Resolution
 
-(To be filled after inspection)
+640 × 640
 
-## Annotation Format
+---
 
-YOLO Object Detection Format
+## Data Split
 
-Each annotation file contains one line per object:
-<class_id> <x_center> <y_center> <width> <height>
+Train
+Validation
+Test
 
-All coordinates are normalized to the image dimensions.
+---
 
-## Data Quality
+## Why this dataset?
 
-- No missing labels observed.
-- Balanced class distribution.
-- Train/Validation/Test split already provided.
+The dataset contains multiple PCB defects with sufficient class balance and predefined train/validation/test splits.
 
-## Preprocessing
-
-- Image size: 640 × 640
-- Normalization: Performed automatically by Ultralytics
-- Polygon annotations converted automatically during training
+---
 
 ## Data Augmentation
 
-YOLO default augmentations:
+YOLO default augmentations
 
 - Mosaic
 - Flip
 - Scale
 - HSV augmentation
-- Translation
-- Perspective
 
-## Why no additional preprocessing?
+---
 
-The dataset is already balanced and well annotated.
-Therefore, no oversampling or manual balancing techniques were required.
+## Preprocessing
+
+- Image resizing
+- Label validation
+- Dataset integrity verification

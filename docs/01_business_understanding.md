@@ -1,24 +1,32 @@
 # Business Understanding
 
+## Project Motivation
+
+Printed Circuit Boards (PCBs) are fundamental components in modern electronic devices. Manufacturing defects such as open circuits, shorts, missing holes, and spurious copper may significantly reduce product quality and reliability.
+
+Traditional manual inspection is labor-intensive, inconsistent, and difficult to scale for high-volume production.
+
+This project investigates how deep learning can automate PCB defect detection and support industrial quality control.
+
+---
+
 ## Problem Statement
 
-Manual PCB inspection is slow, repetitive, and prone to human error.
-Manufacturing companies require automated visual inspection systems to detect defective products before they reach customers.
+Develop an AI-based inspection system capable of
 
-## Project Goal
+- Detecting PCB defects
+- Localizing each defect
+- Estimating confidence
+- Producing an inspection decision
 
-Develop a Computer Vision system capable of automatically detecting and segmenting PCB defects using deep learning.
+The system should classify every PCB into
 
-## Business Objectives
+- PASS
+- REWORK
+- REJECT
 
-- Reduce manual inspection effort.
-- Improve defect detection consistency.
-- Provide real-time inspection capability.
-- Build a modular inspection pipeline suitable for industrial deployment.
+---
 
-## Success Criteria
+## Business Goal
 
-- Accurate defect localization.
-- High precision and recall.
-- Real-time inference capability.
-- Modular software architecture.
+Reduce inspection time while improving consistency and providing structured inspection reports suitable for industrial environments.

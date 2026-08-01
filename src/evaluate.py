@@ -5,7 +5,7 @@ from config import MODEL_PATH
 
 def main():
 
-    model = YOLO(MODEL_PATH)
+    model = YOLO("runs\\detect\\runs\\yolo26n\\weights\\best.pt")
 
     metrics = model.val()
 

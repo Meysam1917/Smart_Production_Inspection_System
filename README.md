@@ -1,39 +1,108 @@
 # AI-Based PCB Inspection System
 
-An automated PCB (Printed Circuit Board) visual inspection system developed using **YOLO11** and **Python**. The system detects manufacturing defects, evaluates PCB quality using a rule-based scoring engine, and generates inspection reports with annotated images.
+An end-to-end Computer Vision application for automated Printed Circuit Board (PCB) defect detection using YOLO11.
+
+The system detects common PCB manufacturing defects, evaluates board quality using a rule-based decision engine, and generates structured inspection reports suitable for industrial quality control workflows.
 
 ---
 
-## Features
+# Project Motivation
 
-- Automatic PCB defect detection
-- Six supported defect classes
-- Quality score calculation
+Printed Circuit Boards (PCBs) are critical components in electronic products, and manufacturing defects can significantly reduce product reliability.
+
+Traditional manual inspection is:
+
+- Time-consuming
+- Expensive
+- Inconsistent
+- Difficult to scale
+
+This project explores how Computer Vision and Deep Learning can automate PCB inspection while providing consistent and explainable inspection results.
+
+---
+
+# Problem Statement
+
+Develop an AI-powered inspection system capable of:
+
+- Detecting PCB defects
+- Localizing each detected defect
+- Estimating confidence
+- Producing an overall quality assessment
+- Generating structured inspection reports
+
+Each PCB is classified as:
+
+- PASS
+- REWORK
+- REJECT
+
+---
+
+# Why Object Detection?
+
+Image classification only answers:
+
+> Is this PCB defective?
+
+Industrial inspection requires much more information.
+
+Object Detection provides:
+
+- Defect type
+- Defect location
+- Multiple defects in one image
+- Confidence for every prediction
+
+Making it much more suitable for manufacturing inspection.
+
+---
+
+# Why YOLO11?
+
+YOLO11 was selected because it offers:
+
+- High detection accuracy
+- Fast inference
+- Lightweight deployment
+- Excellent real-time performance
+- Strong support within the Ultralytics ecosystem
+
+---
+
+# Methodology
+
+The project follows the **CRISP-DM** methodology.
+
+- Business Understanding
+- Data Understanding
+- Data Preparation
+- Modeling
+- Evaluation
+- Deployment Planning
+
+Documentation for every stage can be found inside the `docs/` folder.
+
+---
+
+# Features
+
+- PCB defect detection
+- Modular inspection pipeline
+- Automated quality scoring
 - PASS / REWORK / REJECT decision
-- JSON inspection report generation
-- Annotated output images
-- Modular software architecture
-- CRISP-DM based development process
+- JSON inspection reports
+- Detection visualization
+- Object-oriented architecture
 
 ---
 
-## Supported Defects
+# System Architecture
 
-| Defect |
-|---------|
-| Mouse Bite |
-| Spur |
-| Missing Hole |
-| Open Circuit |
-| Short |
-| Spurious Copper |
-
----
-
-## Project Architecture
+The PCB inspection system follows a modular pipeline that converts raw images into structured defect reports.
 
 ```
-Input Image
+Image
       │
       ▼
 YOLO Detector
@@ -57,148 +126,160 @@ Inspection Report
 Visualizer
 ```
 
+The detector output is converted into defect objects, inspected by a rule-based decision engine, and finally written to a JSON report with visualization overlays.
+
 ---
 
-## Dataset
+# Project Structure
 
-Dataset used:
+```text
+src/
+├── config.py
+├── detector/
+├── evaluate.py
+├── inspection/
+├── main.py
+├── predict.py
+├── train.py
+├── visualizer.py
+├── vedio_demo.py
 
-PCB Defect Detection Dataset
+datasets/
+├── data.yaml
+├── train/
+├── val/
+└── test/
 
-Classes:
+models/
+├── best.pt
+
+runs/
+├── yolo11/
+├── yolo26n/
+└── yolo26m/
+
+docs/
+└── *.md
+
+requirements.txt
+README.md
+```
+
+---
+
+# Dataset
+
+The dataset contains six PCB defect categories:
 
 - Mouse Bite
 - Spur
 - Missing Hole
-- Open Circuit
 - Short
+- Open Circuit
 - Spurious Copper
 
-Dataset statistics:
+The dataset split used for training and evaluation is approximately:
 
-- Train Images: 8534
-- Validation Images: 1066
-- Test Images: 1068
-
-Total defect instances:
-
-21664
+| Split | Images |
+|--------|--------:|
+| Train | 8534 |
+| Validation | 1066 |
+| Test | 1068 |
 
 ---
 
-## Technologies
+# Training
 
-- Python
-- Ultralytics YOLO11
-- OpenCV
-- NumPy
+The project uses an Ultralytics YOLO implementation for model training.
 
----
+```python
+from ultralytics import YOLO
 
-## Results
+model = YOLO("yolo11s.pt")
 
-Model Performance
-
-| Metric | Value |
-|---------|-------|
-| Precision | 0.98 |
-| Recall | 0.99 |
-| mAP50 | 0.99 |
-| mAP50-95 | 0.58 |
-
----
-
-## Project Structure
-
-```
-SmartProduceInspectionSystem/
-
-docs/
-models/
-reports/
-src/
-tools/
-
-README.md
-requirements.txt
+model.train(
+    data="datasets/data.yaml",
+    epochs=20,
+    imgsz=640,
+    batch=16
+)
 ```
 
----
-
-## Installation
-
-```bash
-git clone <repository-url>
-
-cd SmartProduceInspectionSystem
-
-pip install -r requirements.txt
-```
+Training can also be run for YOLO26 variants using the corresponding `runs/yolo26n` or `runs/yolo26m` configuration directories.
 
 ---
 
-## Usage
+# Results
 
-Train
+The current evaluation compares YOLO11s, YOLO26n, and YOLO26m across the same defect dataset.
 
-```bash
-python src/train.py
-```
+## Sample Prediction
 
-Run Inspection
+### Ground Truth
 
-```bash
-python src/main.py
-```
+![Ground truth](runs/yolo26m/val_batch0_labels.jpg)
 
----
+### Prediction
 
-## Sample Output
-
-The system generates:
-
-- Annotated PCB image
-<!-- Resize width to 600px -->
-<img src="reports\output_images\rotation_270_light_12_spurious_copper_02_3_600.jpg" alt="Inspection Result" width="600">
-
-<!-- Center the image -->
-<p align="center">
-  <img src="reports\output_images\rotation_270_light_12_spur_09_1_600.jpg" alt="Inspection Result" width="600">
-</p>
-- Inspection report (JSON)
-
-Example:
-
-```json
-{
-    "quality_score": 82,
-    "status": "REWORK",
-    "total_defects": 2
-}
-```
+![Prediction](runs/yolo26m/val_batch0_pred.jpg)
 
 ---
 
-## Development Methodology
+## Confusion Matrix
 
-The project follows the **CRISP-DM** framework.
-
-- Business Understanding
-- Data Understanding
-- Data Preparation
-- Modeling
-- Evaluation
-- Deployment
-
-Documentation is available inside the **docs** directory.
+![Confusion Matrix](runs/yolo26m/confusion_matrix.png)
 
 ---
 
-## Future Improvements
+## Precision-Recall Curve
+
+![Precision-Recall Curve](runs/yolo26m/BoxPR_curve.png)
+
+---
+
+## Training Curves
+
+![Training Results](runs/yolo26m/results.png)
+
+---
+
+## Model Comparison
+
+In addition to the baseline YOLO11 implementation, the project evaluates the YOLO26 architecture and compares multiple model variants under identical experimental conditions while considering hardware constraints. This includes YOLO26n for lightweight deployment and YOLO26m for higher accuracy.
+
+# Future Improvements
 
 - Instance Segmentation
-- Real-time Video Inspection
-- Industrial Camera Support
-- Streamlit Dashboard
-- Confidence-aware Quality Scoring
-- Database Logging
+- FastAPI deployment
+- Docker support
+- Explainable AI
+- TensorRT optimization
+- Multi-camera inspection
+
+---
+
+# Technologies
+
+- Python
+- PyTorch
+- YOLO11
+- OpenCV
+- NumPy
+- Ultralytics
+- Git
+
+---
+
+# Documentation
+
+Detailed CRISP-DM documentation is available in:
+
+```
+docs/
+```
+
+---
+
+# License
+
+MIT License
