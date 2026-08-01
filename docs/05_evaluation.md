@@ -80,7 +80,7 @@ Evaluation metrics:
 
 ## YOLO26n
 
-![PR](../runs/yolo26n/PR_curve.png)
+![PR](../runs/yolo26n/BoxPR_curve.png)
 
 ---
 
@@ -97,6 +97,7 @@ Evaluation metrics:
 ![F1](../runs/yolo11/F1_curve.png)
 
 ---
+
 
 ## YOLO26n
 
