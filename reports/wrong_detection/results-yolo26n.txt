@@ -1,0 +1,217 @@
+=== Detection Error Summary (IoU threshold = 0.5) ===
+Total images checked: 1068
+Images with at least one error: 175
+True Positives:  1610
+False Positives: 157  (wrong/extra detections)
+False Negatives: 52  (missed real defects)
+
+=== Per-error detail ===
+l_light_01_short_11_2_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.34
+l_light_01_short_13_2_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.34
+l_light_01_spur_17_3_600.jpg: FALSE NEGATIVE (missed)  class=1
+l_light_01_spurious_copper_09_1_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.49
+l_light_01_spurious_copper_09_1_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.31
+l_light_01_spurious_copper_14_1_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.46
+l_light_04_missing_hole_13_1_600.jpg: FALSE POSITIVE  class=2  best_iou=0.00  conf=0.41
+l_light_04_missing_hole_17_1_600.jpg: FALSE POSITIVE  class=2  best_iou=0.00  conf=0.42
+l_light_04_short_07_2_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.35
+l_light_04_short_11_4_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.37
+l_light_04_short_12_2_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.44
+l_light_04_short_13_1_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.52
+l_light_04_short_15_1_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.39
+l_light_04_short_15_1_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.35
+l_light_04_short_16_4_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.47
+l_light_04_spur_05_2_600.jpg: FALSE NEGATIVE (missed)  class=1
+l_light_04_spurious_copper_05_1_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.27
+l_light_04_spurious_copper_11_3_600.jpg: FALSE POSITIVE  class=5  best_iou=0.48  conf=0.66
+l_light_04_spurious_copper_11_3_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.50
+l_light_04_spurious_copper_20_5_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.56
+l_light_04_spurious_copper_20_5_600.jpg: FALSE NEGATIVE (missed)  class=5
+l_light_05_mouse_bite_09_3_600.jpg: FALSE POSITIVE  class=0  best_iou=0.00  conf=0.32
+l_light_05_mouse_bite_09_3_600.jpg: FALSE NEGATIVE (missed)  class=0
+l_light_05_spur_10_1_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.27
+l_light_05_spurious_copper_08_3_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.37
+l_light_05_spurious_copper_09_2_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.31
+l_light_05_spurious_copper_09_2_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.29
+l_light_05_spurious_copper_09_2_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.26
+l_light_06_mouse_bite_02_5_600.jpg: FALSE POSITIVE  class=0  best_iou=0.00  conf=0.60
+l_light_06_mouse_bite_02_5_600.jpg: FALSE POSITIVE  class=0  best_iou=0.00  conf=0.28
+l_light_06_spur_02_1_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.29
+l_light_06_spur_04_4_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.27
+l_light_06_spurious_copper_07_4_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.76
+l_light_06_spurious_copper_10_5_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.46
+l_light_07_mouse_bite_03_5_600.jpg: FALSE POSITIVE  class=0  best_iou=0.00  conf=0.51
+l_light_07_mouse_bite_04_1_600.jpg: FALSE POSITIVE  class=0  best_iou=0.00  conf=0.32
+l_light_07_short_01_4_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.55
+l_light_07_short_02_3_600.jpg: FALSE NEGATIVE (missed)  class=3
+l_light_07_short_08_5_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.52
+l_light_07_spur_03_1_600.jpg: FALSE NEGATIVE (missed)  class=1
+l_light_08_open_circuit_01_3_600.jpg: FALSE POSITIVE  class=4  best_iou=0.00  conf=0.25
+l_light_08_short_07_1_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.35
+l_light_08_short_08_3_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.38
+l_light_08_short_09_2_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.32
+l_light_08_spur_03_5_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.26
+l_light_08_spurious_copper_08_4_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.40
+l_light_09_missing_hole_07_1_600.jpg: FALSE POSITIVE  class=2  best_iou=0.00  conf=0.77
+l_light_09_missing_hole_10_1_600.jpg: FALSE NEGATIVE (missed)  class=2
+l_light_09_open_circuit_03_1_600.jpg: FALSE POSITIVE  class=4  best_iou=0.00  conf=0.29
+l_light_09_short_08_5_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.53
+l_light_09_spurious_copper_08_2_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.33
+l_light_10_mouse_bite_02_4_600.jpg: FALSE POSITIVE  class=0  best_iou=0.00  conf=0.29
+l_light_10_open_circuit_04_5_600.jpg: FALSE POSITIVE  class=4  best_iou=0.00  conf=0.43
+l_light_10_short_01_2_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.25
+l_light_10_spur_04_4_600.jpg: FALSE NEGATIVE (missed)  class=1
+l_light_11_short_09_5_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.36
+l_light_11_short_09_5_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.36
+l_light_11_spur_04_1_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.40
+l_light_11_spurious_copper_02_1_600.jpg: FALSE NEGATIVE (missed)  class=5
+l_light_11_spurious_copper_07_4_600.jpg: FALSE POSITIVE  class=5  best_iou=0.48  conf=0.57
+l_light_11_spurious_copper_07_4_600.jpg: FALSE NEGATIVE (missed)  class=5
+l_light_12_missing_hole_06_4_600.jpg: FALSE POSITIVE  class=2  best_iou=0.00  conf=0.68
+l_light_12_mouse_bite_06_3_600.jpg: FALSE POSITIVE  class=0  best_iou=0.00  conf=0.79
+l_light_12_open_circuit_01_3_600.jpg: FALSE POSITIVE  class=4  best_iou=0.00  conf=0.42
+l_light_12_spur_05_5_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.29
+l_light_12_spur_06_4_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.41
+l_light_12_spur_09_2_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.27
+l_light_12_spurious_copper_09_2_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.74
+light_06_missing_hole_05_5_600.jpg: FALSE POSITIVE  class=2  best_iou=0.00  conf=0.27
+rotation_270_light_01_mouse_bite_19_1_600.jpg: FALSE NEGATIVE (missed)  class=0
+rotation_270_light_01_open_circuit_13_3_600.jpg: FALSE NEGATIVE (missed)  class=4
+rotation_270_light_01_short_13_3_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.35
+rotation_270_light_01_short_18_1_600.jpg: FALSE POSITIVE  class=3  best_iou=0.45  conf=0.68
+rotation_270_light_01_short_18_1_600.jpg: FALSE NEGATIVE (missed)  class=3
+rotation_270_light_01_spurious_copper_08_1_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.36
+rotation_270_light_01_spurious_copper_12_1_600.jpg: FALSE POSITIVE  class=5  best_iou=0.48  conf=0.76
+rotation_270_light_01_spurious_copper_12_1_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.45
+rotation_270_light_01_spurious_copper_12_1_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.29
+rotation_270_light_01_spurious_copper_12_1_600.jpg: FALSE NEGATIVE (missed)  class=5
+rotation_270_light_01_spurious_copper_20_2_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.55
+rotation_270_light_04_missing_hole_01_5_600.jpg: FALSE NEGATIVE (missed)  class=2
+rotation_270_light_04_missing_hole_04_2_600.jpg: FALSE POSITIVE  class=2  best_iou=0.00  conf=0.43
+rotation_270_light_04_missing_hole_15_2_600.jpg: FALSE NEGATIVE (missed)  class=2
+rotation_270_light_04_mouse_bite_07_5_600.jpg: FALSE POSITIVE  class=0  best_iou=0.00  conf=0.82
+rotation_270_light_04_mouse_bite_15_4_600.jpg: FALSE NEGATIVE (missed)  class=0
+rotation_270_light_04_short_14_3_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.37
+rotation_270_light_04_short_14_3_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.29
+rotation_270_light_04_short_16_5_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.60
+rotation_270_light_04_short_16_5_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.38
+rotation_270_light_04_short_16_5_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.29
+rotation_270_light_04_spur_18_3_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.49
+rotation_270_light_04_spurious_copper_06_3_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.30
+rotation_270_light_04_spurious_copper_14_2_600.jpg: FALSE NEGATIVE (missed)  class=5
+rotation_270_light_04_spurious_copper_15_3_600.jpg: FALSE NEGATIVE (missed)  class=5
+rotation_270_light_05_mouse_bite_06_1_600.jpg: FALSE NEGATIVE (missed)  class=0
+rotation_270_light_05_spurious_copper_05_3_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.37
+rotation_270_light_05_spurious_copper_05_4_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.53
+rotation_270_light_05_spurious_copper_10_4_600.jpg: FALSE NEGATIVE (missed)  class=5
+rotation_270_light_06_missing_hole_10_1_600.jpg: FALSE NEGATIVE (missed)  class=2
+rotation_270_light_06_mouse_bite_01_4_600.jpg: FALSE POSITIVE  class=0  best_iou=0.00  conf=0.32
+rotation_270_light_06_mouse_bite_02_2_600.jpg: FALSE POSITIVE  class=0  best_iou=0.00  conf=0.65
+rotation_270_light_06_mouse_bite_10_5_600.jpg: FALSE POSITIVE  class=0  best_iou=0.00  conf=0.43
+rotation_270_light_06_spur_07_3_600.jpg: FALSE NEGATIVE (missed)  class=1
+rotation_270_light_06_spurious_copper_08_1_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.51
+rotation_270_light_07_open_circuit_03_3_600.jpg: FALSE POSITIVE  class=4  best_iou=0.00  conf=0.27
+rotation_270_light_07_short_02_2_600.jpg: FALSE NEGATIVE (missed)  class=3
+rotation_270_light_07_short_08_3_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.46
+rotation_270_light_07_short_10_4_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.41
+rotation_270_light_07_spur_07_3_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.31
+rotation_270_light_07_spurious_copper_04_2_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.48
+rotation_270_light_07_spurious_copper_04_2_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.30
+rotation_270_light_07_spurious_copper_09_5_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.33
+rotation_270_light_07_spurious_copper_10_2_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.49
+rotation_270_light_08_mouse_bite_06_3_600.jpg: FALSE POSITIVE  class=0  best_iou=0.00  conf=0.77
+rotation_270_light_08_open_circuit_07_3_600.jpg: FALSE POSITIVE  class=4  best_iou=0.00  conf=0.34
+rotation_270_light_08_short_08_5_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.31
+rotation_270_light_08_spurious_copper_02_5_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.38
+rotation_270_light_08_spurious_copper_04_3_600.jpg: FALSE NEGATIVE (missed)  class=5
+rotation_270_light_09_missing_hole_08_2_600.jpg: FALSE POSITIVE  class=2  best_iou=0.00  conf=0.32
+rotation_270_light_10_spur_03_3_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.48
+rotation_270_light_11_missing_hole_04_5_600.jpg: FALSE POSITIVE  class=2  best_iou=0.00  conf=0.56
+rotation_270_light_11_spur_03_5_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.33
+rotation_270_light_11_spurious_copper_10_2_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.51
+rotation_270_light_12_missing_hole_03_1_600.jpg: FALSE NEGATIVE (missed)  class=2
+rotation_270_light_12_spurious_copper_08_3_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.49
+rotation_90_light_01_missing_hole_01_2_600.jpg: FALSE POSITIVE  class=2  best_iou=0.00  conf=0.38
+rotation_90_light_01_open_circuit_13_3_600.jpg: FALSE NEGATIVE (missed)  class=4
+rotation_90_light_01_short_11_4_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.48
+rotation_90_light_01_short_11_4_600.jpg: FALSE NEGATIVE (missed)  class=3
+rotation_90_light_01_spur_06_1_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.25
+rotation_90_light_01_spur_15_1_600.jpg: FALSE NEGATIVE (missed)  class=1
+rotation_90_light_01_spur_18_1_600.jpg: FALSE NEGATIVE (missed)  class=1
+rotation_90_light_01_spur_18_1_600.jpg: FALSE NEGATIVE (missed)  class=1
+rotation_90_light_01_spurious_copper_08_3_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.47
+rotation_90_light_01_spurious_copper_12_1_600.jpg: FALSE POSITIVE  class=5  best_iou=0.48  conf=0.65
+rotation_90_light_01_spurious_copper_12_1_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.44
+rotation_90_light_01_spurious_copper_12_1_600.jpg: FALSE NEGATIVE (missed)  class=5
+rotation_90_light_01_spurious_copper_13_2_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.26
+rotation_90_light_04_short_01_2_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.28
+rotation_90_light_04_short_11_2_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.36
+rotation_90_light_04_short_11_2_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.32
+rotation_90_light_04_spur_05_1_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.30
+rotation_90_light_04_spur_06_2_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.30
+rotation_90_light_04_spur_12_2_600.jpg: FALSE NEGATIVE (missed)  class=1
+rotation_90_light_04_spurious_copper_12_4_600.jpg: FALSE NEGATIVE (missed)  class=5
+rotation_90_light_05_mouse_bite_09_4_600.jpg: FALSE POSITIVE  class=0  best_iou=0.00  conf=0.60
+rotation_90_light_05_mouse_bite_09_4_600.jpg: FALSE NEGATIVE (missed)  class=0
+rotation_90_light_05_spur_04_2_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.30
+rotation_90_light_05_spur_07_4_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.43
+rotation_90_light_05_spur_07_4_600.jpg: FALSE NEGATIVE (missed)  class=1
+rotation_90_light_05_spur_10_1_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.29
+rotation_90_light_05_spurious_copper_07_1_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.60
+rotation_90_light_05_spurious_copper_10_2_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.54
+rotation_90_light_05_spurious_copper_10_2_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.28
+rotation_90_light_06_missing_hole_03_2_600.jpg: FALSE POSITIVE  class=2  best_iou=0.00  conf=0.73
+rotation_90_light_06_mouse_bite_06_3_600.jpg: FALSE POSITIVE  class=2  best_iou=0.00  conf=0.31
+rotation_90_light_06_open_circuit_04_2_600.jpg: FALSE POSITIVE  class=4  best_iou=0.00  conf=0.72
+rotation_90_light_06_open_circuit_05_2_600.jpg: FALSE POSITIVE  class=2  best_iou=0.00  conf=0.31
+rotation_90_light_06_open_circuit_07_3_600.jpg: FALSE POSITIVE  class=2  best_iou=0.00  conf=0.31
+rotation_90_light_06_open_circuit_08_3_600.jpg: FALSE POSITIVE  class=2  best_iou=0.00  conf=0.31
+rotation_90_light_06_short_04_3_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.72
+rotation_90_light_06_short_04_3_600.jpg: FALSE POSITIVE  class=2  best_iou=0.00  conf=0.30
+rotation_90_light_06_spur_01_3_600.jpg: FALSE POSITIVE  class=2  best_iou=0.00  conf=0.31
+rotation_90_light_06_spur_03_1_600.jpg: FALSE NEGATIVE (missed)  class=1
+rotation_90_light_06_spur_03_3_600.jpg: FALSE POSITIVE  class=2  best_iou=0.00  conf=0.32
+rotation_90_light_06_spur_06_2_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.76
+rotation_90_light_06_spur_06_3_600.jpg: FALSE POSITIVE  class=2  best_iou=0.00  conf=0.31
+rotation_90_light_06_spurious_copper_05_4_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.32
+rotation_90_light_06_spurious_copper_07_3_600.jpg: FALSE NEGATIVE (missed)  class=5
+rotation_90_light_06_spurious_copper_07_4_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.82
+rotation_90_light_06_spurious_copper_10_1_600.jpg: FALSE NEGATIVE (missed)  class=5
+rotation_90_light_07_missing_hole_09_4_600.jpg: FALSE POSITIVE  class=2  best_iou=0.00  conf=0.40
+rotation_90_light_07_open_circuit_08_5_600.jpg: FALSE NEGATIVE (missed)  class=4
+rotation_90_light_07_short_06_1_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.28
+rotation_90_light_07_short_06_3_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.26
+rotation_90_light_07_spurious_copper_08_3_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.64
+rotation_90_light_07_spurious_copper_08_3_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.39
+rotation_90_light_08_mouse_bite_09_4_600.jpg: FALSE NEGATIVE (missed)  class=0
+rotation_90_light_08_short_06_3_600.jpg: FALSE NEGATIVE (missed)  class=3
+rotation_90_light_08_short_08_4_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.36
+rotation_90_light_08_spurious_copper_04_3_600.jpg: FALSE NEGATIVE (missed)  class=5
+rotation_90_light_08_spurious_copper_05_5_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.30
+rotation_90_light_09_mouse_bite_05_1_600.jpg: FALSE POSITIVE  class=0  best_iou=0.00  conf=0.27
+rotation_90_light_09_open_circuit_09_3_600.jpg: FALSE POSITIVE  class=0  best_iou=0.00  conf=0.65
+rotation_90_light_09_open_circuit_09_3_600.jpg: FALSE NEGATIVE (missed)  class=4
+rotation_90_light_09_spur_02_3_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.67
+rotation_90_light_10_open_circuit_04_4_600.jpg: FALSE NEGATIVE (missed)  class=4
+rotation_90_light_10_open_circuit_04_5_600.jpg: FALSE POSITIVE  class=4  best_iou=0.00  conf=0.58
+rotation_90_light_10_short_04_2_600.jpg: FALSE NEGATIVE (missed)  class=3
+rotation_90_light_10_short_05_3_600.jpg: FALSE NEGATIVE (missed)  class=3
+rotation_90_light_10_short_05_4_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.38
+rotation_90_light_10_short_05_4_600.jpg: FALSE POSITIVE  class=3  best_iou=0.00  conf=0.34
+rotation_90_light_10_spur_04_5_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.55
+rotation_90_light_10_spur_04_5_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.32
+rotation_90_light_10_spur_04_5_600.jpg: FALSE NEGATIVE (missed)  class=1
+rotation_90_light_10_spurious_copper_02_3_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.42
+rotation_90_light_11_open_circuit_08_3_600.jpg: FALSE POSITIVE  class=4  best_iou=0.00  conf=0.28
+rotation_90_light_11_open_circuit_09_4_600.jpg: FALSE POSITIVE  class=4  best_iou=0.00  conf=0.31
+rotation_90_light_11_short_07_3_600.jpg: FALSE NEGATIVE (missed)  class=3
+rotation_90_light_11_short_07_4_600.jpg: FALSE NEGATIVE (missed)  class=3
+rotation_90_light_11_short_07_5_600.jpg: FALSE NEGATIVE (missed)  class=3
+rotation_90_light_11_spur_04_5_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.35
+rotation_90_light_11_spur_04_5_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.32
+rotation_90_light_12_short_05_1_600.jpg: FALSE NEGATIVE (missed)  class=3
+rotation_90_light_12_spur_02_1_600.jpg: FALSE POSITIVE  class=1  best_iou=0.00  conf=0.29
+rotation_90_light_12_spurious_copper_09_1_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.78
+rotation_90_light_12_spurious_copper_09_3_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.76
+rotation_90_light_12_spurious_copper_09_3_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.40
+rotation_90_light_12_spurious_copper_10_1_600.jpg: FALSE POSITIVE  class=5  best_iou=0.00  conf=0.39
