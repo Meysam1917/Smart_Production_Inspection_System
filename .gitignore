@@ -3,6 +3,7 @@ __pycache__/
 
 .venv/
 
+# Training outputs (weights, logs) — doc figures live in docs/assets/
 runs/
 
 reports/output_images/

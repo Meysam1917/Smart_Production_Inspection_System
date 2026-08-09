@@ -74,14 +74,14 @@ YOLO11 was selected because it offers:
 
 The project follows the **CRISP-DM** methodology.
 
-- Business Understanding
-- Data Understanding
-- Data Preparation
-- Modeling
-- Evaluation
-- Deployment Planning
-
-Documentation for every stage can be found inside the `docs/` folder.
+| Phase | Document |
+|-------|----------|
+| 1. Business Understanding | [docs/01_business_understanding.md](docs/01_business_understanding.md) |
+| 2. Data Understanding | [docs/02_data_understanding.md](docs/02_data_understanding.md) |
+| 3. Data Preparation | [docs/03_data_preparation.md](docs/03_data_preparation.md) |
+| 4. Modeling | [docs/04_modeling.md](docs/04_modeling.md) |
+| 5. Evaluation | [docs/05_evaluation.md](docs/05_evaluation.md) |
+| 6. Deployment | [docs/06_deployment.md](docs/06_deployment.md) |
 
 ---
 
@@ -159,7 +159,13 @@ runs/
 └── yolo26m/
 
 docs/
-└── *.md
+├── 01_business_understanding.md
+├── 02_data_understanding.md
+├── 03_data_preparation.md
+├── 04_modeling.md
+├── 05_evaluation.md
+├── 06_deployment.md
+└── assets/
 
 requirements.txt
 README.md
@@ -217,29 +223,29 @@ The current evaluation compares YOLO11s, YOLO26n, and YOLO26m across the same de
 
 ### Ground Truth
 
-![Ground truth](runs/yolo26m/val_batch0_labels.jpg)
+![Ground truth](docs/assets/yolo26m/val_batch0_labels.jpg)
 
 ### Prediction
 
-![Prediction](runs/yolo26m/val_batch0_pred.jpg)
+![Prediction](docs/assets/yolo26m/val_batch0_pred.jpg)
 
 ---
 
 ## Confusion Matrix
 
-![Confusion Matrix](runs/yolo26m/confusion_matrix.png)
+![Confusion Matrix](docs/assets/yolo26m/confusion_matrix.png)
 
 ---
 
 ## Precision-Recall Curve
 
-![Precision-Recall Curve](runs/yolo26m/BoxPR_curve.png)
+![Precision-Recall Curve](docs/assets/yolo26m/BoxPR_curve.png)
 
 ---
 
 ## Training Curves
 
-![Training Results](runs/yolo26m/results.png)
+![Training Results](docs/assets/yolo26m/results.png)
 
 ---
 
@@ -272,11 +278,16 @@ In addition to the baseline YOLO11 implementation, the project evaluates the YOL
 
 # Documentation
 
-Detailed CRISP-DM documentation is available in:
+Detailed CRISP-DM documentation is available in `docs/`:
 
-```
-docs/
-```
+- [01 — Business Understanding](docs/01_business_understanding.md)
+- [02 — Data Understanding](docs/02_data_understanding.md)
+- [03 — Data Preparation](docs/03_data_preparation.md)
+- [04 — Modeling](docs/04_modeling.md)
+- [05 — Evaluation](docs/05_evaluation.md)
+- [06 — Deployment](docs/06_deployment.md)
+
+Evaluation figures are stored in `docs/assets/` so they render on GitHub. Full training outputs remain in `runs/` (local only, gitignored).
 
 ---
 

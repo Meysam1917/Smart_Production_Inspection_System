@@ -1,5 +1,72 @@
 # Deployment
 
+## System Architecture
+
+The system architecture is organized as a sequential inspection pipeline that converts input PCB images into structured defect reports.
+
+```text
+Image
+      │
+      ▼
+YOLO Detector  ──────────►  Runs inference, returns raw
+                             Ultralytics detection results
+      │
+      ▼
+Result Converter ─────────► Converts raw YOLO output into
+                             application-level PCBDefect objects
+      │
+      ▼
+PCBDefect Objects
+      │
+      ▼
+Inspection Manager ───────► Collects all defects for one board,
+                             clears state between images
+      │
+      ▼
+Decision Engine ──────────► Calculates quality score and
+                             PASS / REWORK / REJECT status
+      │
+      ▼
+Inspection Report ────────► Creates JSON reports
+      │
+      ▼
+Visualizer ───────────────► Draws detections and inspection results
+```
+
+---
+
+## Components
+
+### YOLODetector
+
+Runs inference on input PCB images using the trained YOLO model.
+
+### ResultConverter
+
+Converts YOLO output into `PCBDefect` objects with class, confidence, and bounding box.
+
+### PCBDefect
+
+Represents one detected defect on a board.
+
+### InspectionManager
+
+Stores all defects belonging to one PCB and clears state between images.
+
+### DecisionEngine
+
+Calculates quality score and inspection status (PASS / REWORK / REJECT).
+
+### InspectionReport
+
+Creates structured JSON inspection reports.
+
+### Visualizer
+
+Draws detections and inspection results on the input image.
+
+---
+
 ## Pipeline
 
 Image → YOLO Detector → ResultConverter → InspectionManager → DecisionEngine → InspectionReport → Visualizer
