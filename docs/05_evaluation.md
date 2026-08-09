@@ -28,6 +28,8 @@ Evaluation metrics:
 | YOLO26n | 20 | 0.9449 | 0.9567 | 0.9795 | 0.5344 |
 | YOLO26m | 11 | 0.9739 | 0.9808 | 0.9882 | 0.5462 |
 
+![Comparison](docs\assets\samples\model_comparison.png)
+
 All three architectures deliver strong detection quality. YOLO26m slightly leads on mAP50 despite the shorter 11-epoch schedule. YOLO11s achieves the best performance across stricter IoU thresholds (mAP50-95). YOLO26n is the best choice when deployment efficiency is the priority.
 
 ---
@@ -234,6 +236,8 @@ YOLO11s and YOLO26m perform similarly on error counts, despite YOLO26m being tra
 ### Confirmed Findings
 
 The three `results-*.txt` files were parsed in full — every individual false positive and false negative, across all three models, categorized by defect class and confidence score.
+
+[Findings](docs\assets\samples\fp_by_class.png)
 
 #### 1. Spurious Copper and Short dominate false positives
 
